@@ -15,11 +15,11 @@
             Andy&#8217;s Country Playlist
         </h1>
         <nav>
-            <div class="site-navigation">
-                <div><a href="artists.html">Artists</a></div>
-                <div><b>Albums</b></div>
-                <div><a href="about.html">How We Pick 'Em</a></div>
-            </div>
+            <ul>
+                <li><a href="artists.html">Artists</a></li>
+                <li class="selected">Albums</li>
+                <li><a href="about.html">How We Pick 'Em</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -50,20 +50,20 @@
         </section>
         <section id="tracks">
             <h4>Track Listing</h4>
-            <ol>
-                <li>The Man from Waco Theme (0:58)</li>
-                <li>Cowboy Candy (3:19)</li>
-                <li>Time of the Cottonwood Trees (2:53)</li>
-                <li>Just Like Honey (2:56)</li>
-                <li>I'm Just a Clown (4:14)</li>
-                <li>Black Sedan (3:24)</li>
-                <li>The Man from Waco (3:04)</li>
-                <li>All the Way from Atlanta (3:26)</li>
-                <li>Horse Thief Mesa (2:22)</li>
-                <li>July Jackson (3:02)</li>
-                <li>The Man from Waco Finale (0:33)</li>
-                <li>Name on a Billboard (3:00)</li>
-            </ol>
+            <div id="flex-tracklist">
+                <div class="flex-track"><p class="tracknumber">1</p><p class="trackname">The Man from Waco Theme (0:58)</p></div>
+                <div class="flex-track"><p class="tracknumber">2</p><p class="trackname">Cowboy Candy (3:19)</p></div>
+                <div class="flex-track"><p class="tracknumber">3</p><p class="trackname">Time of the Cottonwood Trees (2:53)</p></div>
+                <div class="flex-track"><p class="tracknumber">4</p><p class="trackname">Just Like Honey (2:56)</p></div>
+                <div class="flex-track"><p class="tracknumber">5</p><p class="trackname">I'm Just a Clown (4:14)</p></div>
+                <div class="flex-track"><p class="tracknumber">6</p><p class="trackname">Black Sedan (3:24)</p></div>
+                <div class="flex-track"><p class="tracknumber">7</p><p class="trackname">The Man from Waco (3:04)</p></div>
+                <div class="flex-track"><p class="tracknumber">8</p><p class="trackname">All the Way from Atlanta (3:26)</p></div>
+                <div class="flex-track"><p class="tracknumber">9</p><p class="trackname">Horse Thief Mesa (2:22)</p></div>
+                <div class="flex-track"><p class="tracknumber">10</p><p class="trackname">July Jackson (3:02)</p></div>
+                <div class="flex-track"><p class="tracknumber">11</p><p class="trackname">The Man from Waco Finale (0:33)</p></div>
+                <div class="flex-track"><p class="tracknumber">12</p><p class="trackname">Name on a Billboard (3:00)</p></div>
+            </div>
         </section>
         <section id="credits">
             <h4>Image Credit</h4>
