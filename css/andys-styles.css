@@ -3,6 +3,27 @@
 }
 
 body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 1em;
+}
+
+header {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+main {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+}
+
+footer {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
+
+body {
     background-color: #faf2e4;
     margin: 2%;
     font-family: sans-serif;
@@ -118,10 +139,13 @@ figcaption {
 nav {
     background-color: darkslategray;
     padding: .5em;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
 }
 
 nav ul {
     display: flex;
+    flex-direction:column;
     justify-content: center;
     margin: 0;
     padding: 0;
