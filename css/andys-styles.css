@@ -55,11 +55,9 @@ footer {
 
 img {
     max-width: 100%;
-    display:block;
 }
 
 img.logo {
-    display:inline;
     vertical-align: middle;
 }
 
@@ -254,7 +252,7 @@ nav ul li {
 
 @media screen and (max-width: 400px) {
     img {
-        width:max-content
+        width: 85%;
     }
     nav ul {
         flex-direction: column;
