@@ -5,7 +5,7 @@
 body {
     display: grid;
     grid-template-rows: auto auto auto auto;
-    grid-template-columns: minmax(20em,1fr) 16em;
+    grid-template-columns: minmax(5em,1fr) 16em;
     row-gap: 1em;
     column-gap: 1em;
 }
@@ -47,6 +47,14 @@ body {
 
 footer {
     border-top: 1px solid black;
+}
+
+img {
+    max-width: 100%;
+}
+
+br.narrow {
+    display:none;
 }
 
 img.logo {
@@ -159,6 +167,8 @@ nav {
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
     justify-content: center;
     margin: 0;
     padding: 0;
@@ -236,4 +246,58 @@ nav ul li {
 .indented {
     position:relative;
     left:1em;
+}
+
+/* responsive web design */
+
+@media screen and (max-width: 400px) {
+    nav ul {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .to-the-left {
+        float: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    br.narrow {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: auto;
+    }
+    header {
+        grid-row: 1;
+    }
+    main {
+        grid-row: 2;
+    }
+    aside {
+        grid-row: 3;
+        grid-column: 1;
+    }
+    footer {
+        grid-row: 4;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .to-the-right {
+        float: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        max-width: 1200px;
+        margin: 1em auto;
+        padding: 1em;
+        position: relative;
+        border: 1px solid black;
+    }
 }
