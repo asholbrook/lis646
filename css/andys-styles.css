@@ -251,9 +251,6 @@ nav ul li {
 /* responsive web design */
 
 @media screen and (max-width: 400px) {
-    img {
-        width: 85%;
-    }
     nav ul {
         flex-direction: column;
         justify-content: space-around;
